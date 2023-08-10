@@ -1,0 +1,7 @@
+-- https://www.hackerrank.com/challenges/earnings-of-employees/
+
+SELECT MONTHS * SALARY AS EARNINGS, COUNT(NAME)
+FROM EMPLOYEE
+GROUP BY EARNINGS
+ORDER BY EARNINGS DESC
+LIMIT 1;
